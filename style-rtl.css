@@ -1,0 +1,37 @@
+/*
+ * RTL stylesheet for Rastin Shop.
+ * The theme is authored with CSS logical properties, so this mirrors style.css.
+ * It is loaded automatically for right-to-left locales (e.g. Persian) via
+ * wp_style_add_data( 'rastin-style', 'rtl', 'replace' ).
+ */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.wc-block-grid__product,
+.wp-block-woocommerce-product-template li.product {
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.wc-block-grid__product:hover,
+.wp-block-woocommerce-product-template li.product:hover {
+	transform: translateY(-4px);
+}
+
+.wp-block-button__link:active,
+.wp-element-button:active {
+	transform: translateY(1px);
+}
+
+.woocommerce span.onsale,
+.wc-block-grid__product-onsale {
+	inset-inline-start: 0.5rem;
+	inset-inline-end: auto;
+}
+
+img,
+.wp-block-image img {
+	max-width: 100%;
+	height: auto;
+}

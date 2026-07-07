@@ -1,0 +1,61 @@
+/*
+Theme Name: Rastin Shop
+Theme URI: https://github.com/inosrati/rastin-shop
+Author: Ismail Nosrati
+Author URI: https://github.com/inosrati
+Description: قالب بلاکی (Full Site Editing) فروشگاهی و راست‌به‌چپ برای وردپرس، سازگار با WooCommerce. یک قالب سبک، سریع و کاملاً فارسی با فونت وزیرمتن. A lightweight, fast, fully RTL WooCommerce-ready block theme.
+Requires at least: 6.5
+Tested up to: 6.7
+Requires PHP: 7.4
+Version: 1.1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: rastin
+Tags: e-commerce, full-site-editing, block-patterns, translation-ready, rtl-language-support, custom-colors, custom-logo, custom-menu, featured-images, block-styles, wide-blocks
+WC requires at least: 8.0
+WC tested up to: 9.5
+
+Rastin Shop is based on code from the WordPress default themes and is distributed under the GNU GPL.
+*/
+
+/*
+ * The theme is a block theme; most styling is handled in theme.json.
+ * This file only contains overrides that cannot be expressed in theme.json,
+ * plus a few WooCommerce niceties.
+ */
+
+/* Smooth scrolling for anchor links */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Product grid card hover polish */
+.wc-block-grid__product,
+.wp-block-woocommerce-product-template li.product {
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.wc-block-grid__product:hover,
+.wp-block-woocommerce-product-template li.product:hover {
+	transform: translateY(-4px);
+}
+
+/* Buttons: consistent radius already from theme.json; add subtle press effect */
+.wp-block-button__link:active,
+.wp-element-button:active {
+	transform: translateY(1px);
+}
+
+/* Sale badge alignment for RTL */
+.woocommerce span.onsale,
+.wc-block-grid__product-onsale {
+	inset-inline-start: auto;
+	inset-inline-end: 0.5rem;
+}
+
+/* Keep images responsive */
+img,
+.wp-block-image img {
+	max-width: 100%;
+	height: auto;
+}

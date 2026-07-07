@@ -1,0 +1,55 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--60)">
+	<!-- wp:heading {"level":1} -->
+	<h1 class="wp-block-heading">سبد خرید</h1>
+	<!-- /wp:heading -->
+	<!-- wp:woocommerce/cart {"align":"wide"} -->
+	<div class="wp-block-woocommerce-cart alignwide is-loading">
+		<!-- wp:woocommerce/filled-cart-block -->
+		<div class="wp-block-woocommerce-filled-cart-block">
+			<!-- wp:woocommerce/cart-items-block -->
+			<div class="wp-block-woocommerce-cart-items-block">
+				<!-- wp:woocommerce/cart-line-items-block -->
+				<div class="wp-block-woocommerce-cart-line-items-block"></div>
+				<!-- /wp:woocommerce/cart-line-items-block -->
+			</div>
+			<!-- /wp:woocommerce/cart-items-block -->
+
+			<!-- wp:woocommerce/cart-totals-block -->
+			<div class="wp-block-woocommerce-cart-totals-block">
+				<!-- wp:woocommerce/cart-order-summary-block -->
+				<div class="wp-block-woocommerce-cart-order-summary-block"></div>
+				<!-- /wp:woocommerce/cart-order-summary-block -->
+				<!-- wp:woocommerce/cart-express-payment-block -->
+				<div class="wp-block-woocommerce-cart-express-payment-block"></div>
+				<!-- /wp:woocommerce/cart-express-payment-block -->
+				<!-- wp:woocommerce/proceed-to-checkout-block -->
+				<div class="wp-block-woocommerce-proceed-to-checkout-block"></div>
+				<!-- /wp:woocommerce/proceed-to-checkout-block -->
+				<!-- wp:woocommerce/cart-accepted-payment-methods-block -->
+				<div class="wp-block-woocommerce-cart-accepted-payment-methods-block"></div>
+				<!-- /wp:woocommerce/cart-accepted-payment-methods-block -->
+			</div>
+			<!-- /wp:woocommerce/cart-totals-block -->
+		</div>
+		<!-- /wp:woocommerce/filled-cart-block -->
+
+		<!-- wp:woocommerce/empty-cart-block -->
+		<div class="wp-block-woocommerce-empty-cart-block">
+			<!-- wp:heading {"textAlign":"center","level":2} -->
+			<h2 class="wp-block-heading has-text-align-center">سبد خرید شما خالی است!</h2>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph {"align":"center"} -->
+			<p class="has-text-align-center">به نظر می‌رسد هنوز محصولی به سبد خرید اضافه نکرده‌اید.</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:woocommerce/product-new {"columns":4,"rows":1} /-->
+		</div>
+		<!-- /wp:woocommerce/empty-cart-block -->
+	</div>
+	<!-- /wp:woocommerce/cart -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
