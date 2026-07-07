@@ -11,8 +11,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'RASTIN_VERSION' ) ) {
-	define( 'RASTIN_VERSION', '1.0.0' );
+	define( 'RASTIN_VERSION', '1.1.0' );
 }
+
+// Admin menu infrastructure: single top-level theme menu + hook for companion plugins.
+require_once get_template_directory() . '/inc/admin-menu.php';
 
 if ( ! function_exists( 'rastin_setup' ) ) {
 	/**

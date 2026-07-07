@@ -4,7 +4,7 @@ Contributors: inosrati
 Requires at least: 6.5
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: e-commerce, full-site-editing, block-patterns, translation-ready, rtl-language-support, custom-colors, custom-logo, featured-images
@@ -52,6 +52,10 @@ License: SIL Open Font License, 1.1 — https://scripts.sil.org/OFL
 Source: https://github.com/rastikerdar/vazirmatn
 
 == Changelog ==
+
+= 1.1.0 =
+* افزودن منوی مدیریت واحد «قالب رستین» در پیشخوان با صفحه‌ی پیشخوان و دسترسی سریع.
+* فراهم‌کردن نقطه‌ی اتصال برای افزونه‌های همراه (ثابت `RASTIN_ADMIN_MENU_SLUG` و اکشن `rastin_admin_menu`) تا صفحاتشان زیرِ همین منو ثبت شوند.
 
 = 1.0.0 =
 * Initial release.
